@@ -1,0 +1,131 @@
+html, body{
+    height: 100%;
+    background: #ccc;
+}
+
+body {
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* header---------------------------- */
+#header {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333;
+    background: #fff;
+
+    position: fixed;
+    z-index: 1;
+}
+#header .menuLeft{ 
+    width: 20%;
+    height: 100%;
+    border: 1px solid #333;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#header .menuMiddle {
+    width: 40%;
+    height: 100%;
+    border: 1px solid #333;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header .menuRight {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #333;
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+.square{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+}
+.hamburger {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #333;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search {
+    width: 90%;
+    height: 40px;
+    border: 1px solid #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.voice {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.application {
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.setting {
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.signIn {
+    width: 20%;
+    height: 40px;
+    border: 1px solid #333;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* sideMenu---------------------------- */
+
+#sideMenu {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #333;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: auto;
+}
+
+#sideMenu .blockall{
+    border: 5px solid #d22;
+}
+
+#sideMenu .block {
+    width: 80%;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 0 10%;
+
+    /* position: absolute;
+    left: 10%; */
+}
+#sideMenu .blockspace {
+    height: 60px;
+}
