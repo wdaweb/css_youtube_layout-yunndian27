@@ -12,7 +12,7 @@ body {
 #header {
   width: 100vw;
   height: 56px;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   background: #fff;
 
   position: fixed;
@@ -22,44 +22,44 @@ body {
   width: 20%;
   height: 100%;
   /* border: 1px solid #333; */
-  display: inline-block;
+  display: block;
   float: left;
   position: relative;
 }
 #header .menuMiddle {
   width: 40%;
   height: 100%;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   display: inline-block;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+
 #header .menuRight {
   width: 20%;
   height: 100%;
-  border: 1px solid #333;
-  display: inline-block;
+  /* border: 1px solid #333; */
+  display: block;
   float: right;
   position: relative;
 }
 .square {
   width: 40px;
   height: 40px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #eee; */
+  text-align: center;
+  line-height: 40px;
 }
 .hamburger {
   position: absolute;
   left: 10%;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center;
-  line-height: 40px;
-  color: #888;
+  color: #555;
 }
 .logo {
-  width: 130px;
   height: 40px;
   /* border: 1px solid #333; */
   position: absolute;
@@ -67,65 +67,81 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
-  background: no-repeat url(../images/YouTube_s.png);
-  background-position: left;
-  background-size: 70%;
+  font-size: 1.5rem;
+  letter-spacing: -3px;
+  font-weight: 500;
+  line-height: 40px;
 }
-.logo p {
+.logo .fa-youtube {
+  color: #d22;
+  letter-spacing: 4px;
+}
+.logo span {
   position: absolute;
-  right: 15%;
+  bottom: 6px;
+  left: 110px;
   font-weight: 300;
   font-size: 0.5rem;
+  letter-spacing: -1px;
 }
 .search {
   width: 90%;
-  height: 40px;
+  height: 32px;
+  border: 1.4px solid #bbb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnSearch {
+  width: 80px;
+  height: 32px;
   border: 1.2px solid #bbb;
+  background: #eee;
+
   position: absolute;
+  right: -1px;
   top: 50%;
   transform: translateY(-50%);
+
+  text-align: center;
+  line-height: 32px;
 }
-.search .btnSearch {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #333;
-}
-/* .search .fa-search {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-} */
 .voice {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 40px;
+  font-size: 1.1rem;
   color: #555;
 }
 .application {
   position: absolute;
-  right: 55%;
+  right: 60%;
   top: 50%;
   transform: translateY(-50%);
+  color: #555;
 }
 .setting {
   position: absolute;
-  right: 35%;
+  right: 45%;
   top: 50%;
   transform: translateY(-50%);
 }
 .signIn {
-  width: 20%;
+  width: 30%;
   height: 40px;
-  border: 1px solid #333;
+  border: 1px solid #0080ff;
+  color: #0080ff;
   position: absolute;
   right: 10%;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
+  line-height: 40px;
+  font-weight: 300;
+}
+.signIn .fa-user-circle {
+  font-size: 1.5rem;
 }
 
 /* sideMenu---------------------------- */
