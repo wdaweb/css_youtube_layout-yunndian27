@@ -18,6 +18,10 @@ body {
   position: fixed;
   z-index: 1;
 }
+#header #container {
+  height: 56px;
+  padding: 0 16px;
+}
 #header .menuLeft {
   width: 20%;
   height: 100%;
@@ -54,32 +58,29 @@ body {
 }
 .hamburger {
   position: absolute;
-  left: 10%;
+  /* left: 10%; */
   top: 50%;
   transform: translateY(-50%);
   color: #555;
 }
 .logo {
-  height: 40px;
+  height: 20px;
   /* border: 1px solid #333; */
   position: absolute;
-  left: 25%;
   top: 50%;
   transform: translateY(-50%);
+  margin: 0 0 0 58px;
+}
 
-  font-size: 1.5rem;
-  letter-spacing: -3px;
-  font-weight: 500;
-  line-height: 40px;
+.logo img {
+  width: auto;
+  height: 20px;
 }
-.logo .fa-youtube {
-  color: #d22;
-  letter-spacing: 4px;
-}
+
 .logo span {
   position: absolute;
-  bottom: 6px;
-  left: 110px;
+  bottom: 10px;
+  left: 90px;
   font-weight: 300;
   font-size: 0.5rem;
   letter-spacing: -1px;
@@ -147,9 +148,9 @@ body {
 /* sideMenu---------------------------- */
 
 #sideMenu {
-  width: 20%;
+  width: 13%;
   height: 100%;
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   background: #fff;
   position: fixed;
   left: 0;
@@ -157,19 +158,54 @@ body {
   overflow-x: auto;
 }
 
-#sideMenu .blockall {
-  border: 5px solid #d22;
-}
-
 #sideMenu .block {
-  width: 80%;
-  height: 200px;
-  border: 1px solid #333;
-  margin: 0 10%;
-
-  /* position: absolute;
-    left: 10%; */
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  /* border: 1px solid #d22 */
 }
 #sideMenu .blockspace {
-  height: 60px;
+  height: 45px;
+}
+
+#sideMenu ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  /* padding: 10px 0; */
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+
+#sideMenu i {
+  font-size: 1.2rem;
+  padding-left: 24px;
+  padding-right: 28px;
+}
+
+#sideMenu ul li a:hover {
+  background: #ddd;
+  color: #000;
+  font-weight: 500;
+}
+
+.block3 .singInfo {
+  margin: 0 33px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 10px 0;
+  font-weight: 300;
+  color: #666;
+}
+
+.block3 .signin {
+  border: 1px solid #0080ff;
+  color: #0080ff;
+  display: inline-block;
+}
+
+.sideContainer .title {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 8px 24px;
 }
