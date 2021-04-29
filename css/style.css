@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+}
 html,
 body {
   height: 100vh;
-  background: #ccc;
+  background: #f0f0f0;
 }
 
 body {
@@ -86,17 +91,24 @@ body {
   letter-spacing: -1px;
 }
 .search {
-  width: 90%;
+  width: 84%;
   height: 32px;
   border: 1.4px solid #bbb;
   position: absolute;
+  left: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
-.btnSearch {
-  width: 80px;
+#search {
+  width: 89%;
   height: 32px;
-  border: 1.2px solid #bbb;
+  position: absolute;
+  border: 0;
+}
+.btnSearch {
+  width: 70px;
+  height: 32px;
+  border: 1px solid #bbb;
   background: #eee;
 
   position: absolute;
@@ -109,32 +121,32 @@ body {
 }
 .voice {
   position: absolute;
-  right: 10px;
+  right: 42px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
 }
 .application {
   position: absolute;
-  right: 60%;
+  right: 42%;
   top: 50%;
   transform: translateY(-50%);
   color: #555;
 }
 .setting {
   position: absolute;
-  right: 45%;
+  right: 30%;
   top: 50%;
   transform: translateY(-50%);
 }
 .signIn {
-  width: 30%;
   height: 40px;
+  padding: 0 12px;
   border: 1px solid #0080ff;
   color: #0080ff;
   position: absolute;
-  right: 10%;
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -160,18 +172,18 @@ body {
 
 #sideMenu .block {
   border-bottom: 1px solid #ccc;
-  padding: 5px 0;
+  padding: 8px 0;
   /* border: 1px solid #d22 */
 }
 #sideMenu .blockspace {
-  height: 45px;
+  height: 36px;
 }
 
 #sideMenu ul li a {
   text-decoration: none;
   color: #666;
-  font-size: 0.9rem;
-  /* padding: 10px 0; */
+  font-size: 1rem;
+  letter-spacing: 0.5px;
   display: block;
   height: 40px;
   line-height: 40px;
@@ -179,17 +191,26 @@ body {
 
 #sideMenu i {
   font-size: 1.2rem;
-  padding-left: 24px;
+  padding-left: 28px;
   padding-right: 28px;
 }
 
 #sideMenu ul li a:hover {
   background: #ddd;
-  color: #000;
-  font-weight: 500;
+  color: #111;
+  /* font-weight: 500; */
 }
 
-.block3 .singInfo {
+#sideMenu .block:nth-child(2) ul:nth-child(1) li:nth-child(1) {
+  background: #eee;
+  color: #111;
+  /* font-weight: 500; */
+}
+#sideMenu .block:nth-child(2) ul:nth-child(1) li:nth-child(1) i {
+  color: #f00;
+}
+
+.block .singInfo {
   margin: 0 33px;
   font-size: 0.8rem;
   line-height: 1.2rem;
@@ -197,15 +218,195 @@ body {
   font-weight: 300;
   color: #666;
 }
-
-.block3 .signin {
+#sideMenu .signin i {
+  padding: 0;
+  padding-right: 2px;
+}
+.block .signin {
   border: 1px solid #0080ff;
   color: #0080ff;
   display: inline-block;
+  padding: 7px 15px;
+  margin-left: 32px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 8px;
 }
 
 .sideContainer .title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #666;
   padding: 8px 24px;
+}
+#footer .block {
+  margin: 1px 24px 0 24px;
+  border-bottom: 0;
+}
+#footer .block a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  word-wrap: none;
+}
+#footer .block:nth-child(3) {
+  font-size: 0.6rem;
+  color: #999;
+  margin-bottom: 16px;
+}
+/* content---------------------------- */
+#content {
+  width: 87%;
+  height: 1200px;
+  /* background: brown; */
+  /* border: 2px solid sienna; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#content section:nth-child(2) {
+  padding: 0 90px;
+  margin-top: 48px;
+}
+.row {
+  width: 100%;
+  font-size: 0;
+  /* background: #ccc; */
+}
+.row .empty {
+  width: 100%;
+  height: 56px;
+  /* border: 1px solid seagreen; */
+}
+.row .recordAd {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  background-color: #fff;
+}
+.row .recordAd .sloganBg {
+  width: 1280px;
+  height: 260px;
+  position: absolute;
+  left: 43%;
+  transform: translateX(-50%);
+  background-image: url('../images/slogan-bg.jpeg');
+  background-size: contain;
+}
+.recordAd .cross {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 1.5rem;
+  color: #555;
+}
+.recordAd .slogan {
+  width: 400px;
+  height: 134px;
+  position: absolute;
+  top: 51px;
+  left: 90px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.recordAd .slogan .sloganImg {
+  width: 100%;
+  height: 24px;
+  /* border: 1px solid #22e; */
+  background-image: url('../images/slogan-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 8px;
+}
+
+.recordAd .rec {
+  color: #0080ff;
+  border: 2px solid #0080ff;
+  display: inline-block;
+  padding: 12px 15px;
+  position: absolute;
+  left: 90px;
+  top: 185px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.row .card {
+  width: 25%;
+  /* height: 300px; */
+  /* background: #fff; */
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 8px 40px 8px;
+}
+.card .hdPic {
+  width: 100%;
+  height: 202px;
+  /* border: 1px solid #333; */
+}
+.cardInfo {
+  width: 100%;
+}
+.card .hdPic img {
+  width: 100%;
+  height: 100%;
+}
+.card .circlePic {
+  width: 36px;
+  height: 36px;
+  margin: 12px 12px 0 0;
+  display: inline-block;
+}
+.card .circlePic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.musicName {
+  width: 275px;
+
+  display: inline-block;
+  padding-right: 24px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+
+  color: #333;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.musicName a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.musicInfo {
+  display: inline-block;
+  margin-left: 52px;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  color: #999;
+}
+section:nth-child(2) .row:nth-child(3) {
+  border-top: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  margin-bottom: 40px;
+}
+
+section:nth-child(2) .row:nth-child(5) {
+  border-top: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.row .hotTitle {
+  width: 100%;
+  margin: 24px 0 24px 8px;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
